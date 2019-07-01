@@ -5,7 +5,7 @@ const bot = new Commando.CommandoClient();
 const http = require("http");
 
 //bot.login(process.env.BOT_TOKEN);
-bot.login(TOKEN);
+bot.login(process.env.BOT_TOKEN);
 
 bot.registry.registerGroup("simple", "Simple");
 bot.registry.registerGroup("music", "Music");

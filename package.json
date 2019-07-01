@@ -4,13 +4,14 @@
   "description": "",
   "main": "src/index.js",
   "scripts": {
-    "start": "nodemon src/index.js localhost 8080"
+    "start": "node src/index.js"
   },
   "dependencies": {
     "discord.js": "11.5.1",
     "discord.js-commando": "0.10.0",
     "ffmpeg-binaries": "4.0.0",
     "opusscript": "0.0.6",
+    "request": "^2.88.0",
     "ytdl-core": "0.29.2"
   },
   "devDependencies": {

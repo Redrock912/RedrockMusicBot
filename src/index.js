@@ -1,11 +1,11 @@
 const Commando = require("discord.js-commando");
 const discord = require("discord.js");
 const bot = new Commando.CommandoClient();
-//var TOKEN = 'Kappa";
+//var TOKEN = "Kappa";
 const http = require("http");
 
-//bot.login(process.env.BOT_TOKEN);
 bot.login(process.env.BOT_TOKEN);
+//bot.login(TOKEN);
 
 bot.registry.registerGroup("simple", "Simple");
 bot.registry.registerGroup("music", "Music");

@@ -1,7 +1,7 @@
 const Commando = require("discord.js-commando");
 const discord = require("discord.js");
 const bot = new Commando.CommandoClient();
-//var TOKEN = "Kappa";
+var TOKEN = "Kappa";
 const http = require("http");
 
 bot.login(process.env.BOT_TOKEN);
@@ -12,6 +12,7 @@ bot.registry.registerGroup("music", "Music");
 bot.registry.registerGroup("team", "Team");
 bot.registry.registerGroup("intermediate", "Intermediate");
 bot.registry.registerGroup("fantasy", "Fantasy");
+bot.registry.registerGroup("poe","POE");
 bot.registry.registerDefaults();
 bot.registry.registerCommandsIn(__dirname + "/commands");
 

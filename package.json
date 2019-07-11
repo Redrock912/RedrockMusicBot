@@ -10,6 +10,7 @@
     "discord.js-commando": "^0.10.0",
     "ffmpeg-binaries": "^4.0.0",
     "node-opus": "^0.3.2",
+    "poe-ninja-api-manager": "^0.7.0",
     "ytdl-core": "^0.29.2"
   },
   "devDependencies": {

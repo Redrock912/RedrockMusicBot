@@ -23,7 +23,7 @@ class InfoSelfCommand extends commando.Command {
       .setFooter("읽어줘서 고마워요. :D");
 
     message.channel.sendEmbed(myInfo);
-    message.channel.sendMessage(commando);
+   
   }
 }
 

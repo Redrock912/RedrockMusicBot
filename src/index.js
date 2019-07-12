@@ -13,6 +13,8 @@ bot.registry.registerGroup("team", "Team");
 bot.registry.registerGroup("intermediate", "Intermediate");
 bot.registry.registerGroup("fantasy", "Fantasy");
 bot.registry.registerGroup("poe","POE");
+bot.registry.registerGroup("r6","Rainbow Six");
+bot.registry.registerGroup("tft", "Teamfight Tactics");
 bot.registry.registerDefaults();
 bot.registry.registerCommandsIn(__dirname + "/commands");
 

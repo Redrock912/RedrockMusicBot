@@ -1,19 +1,20 @@
 const Commando = require("discord.js-commando");
 const discord = require("discord.js");
 const bot = new Commando.CommandoClient();
-var TOKEN = "Kappa";
+var TOKEN = "NTk1MTg0MTU4OTU1Nzk4NTQ1.XRnUGQ.6Gh52rtZjbbnDVwvsygL8JMZR9Y";
 const http = require("http");
 
-bot.login(process.env.BOT_TOKEN);
-//bot.login(TOKEN);
+//bot.login(process.env.BOT_TOKEN);
+bot.login(TOKEN);
 
 bot.registry.registerGroup("simple", "Simple");
 bot.registry.registerGroup("music", "Music");
 bot.registry.registerGroup("team", "Team");
 bot.registry.registerGroup("intermediate", "Intermediate");
 bot.registry.registerGroup("fantasy", "Fantasy");
-bot.registry.registerGroup("poe","POE");
-bot.registry.registerGroup("r6","Rainbow Six");
+bot.registry.registerGroup("mtga", "MTGA");
+bot.registry.registerGroup("poe", "POE");
+bot.registry.registerGroup("r6", "Rainbow Six");
 bot.registry.registerGroup("tft", "Teamfight Tactics");
 bot.registry.registerDefaults();
 bot.registry.registerCommandsIn(__dirname + "/commands");
@@ -22,7 +23,7 @@ bot.registry.registerCommandsIn(__dirname + "/commands");
 global.currentTeamMembers = [];
 global.server = new Map();
 
-bot.on("message", function(message) {
+bot.on("message", function (message) {
   if (message.content === "여어") {
     //message.reply("히사시부리~");
     message.channel.sendMessage("히사시부리" + message.author + "... AYAYA");
@@ -58,12 +59,12 @@ bot.on("message", function(message) {
   }
 });
 
-bot.on("ready", function() {
+bot.on("ready", function () {
   console.log("Ready");
 });
 //create a server object:
 
-bot.on("guildMemberAdd", function(member) {
+bot.on("guildMemberAdd", function (member) {
   member.send("어서오세요~ ^ㅁ^");
   let memberRole = member.guild.roles.find(
     role => role.name === "초심자의 행운"
@@ -72,7 +73,7 @@ bot.on("guildMemberAdd", function(member) {
 });
 
 http
-  .createServer(function(req, res) {
+  .createServer(function (req, res) {
     res.write("Hello rd!"); //write a response to the client
     res.end(); //end the response
   })
